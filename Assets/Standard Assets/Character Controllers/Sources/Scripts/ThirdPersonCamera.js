@@ -97,31 +97,6 @@ function Apply (dummyTarget : Transform, dummyCenter : Vector3)
 	// It will stop snapping when it reaches the target
 	if (Input.GetButton("Fire2"))
 		snap = true;
-	
-	if (snap)
-	{
-		// We are close to the target, so we can stop snapping now!
-		if (AngleDistance (currentAngle, originalTargetAngle) < 3.0)
-			snap = false;
-		
-		currentAngle = Mathf.SmoothDampAngle(currentAngle, targetAngle, angleVelocity, snapSmoothLag, snapMaxSpeed);
-	}
-	// Normal camera motion
-	else
-	{
-		if (controller.GetLockCameraTimer () < lockCameraTimeout)
-		{
-			targetAngle = currentAngle;
-		}
-
-		// Lock the camera when moving backwards!
-		// * It is really confusing to do 180 degree spins when turning around.
-		if (AngleDistance (currentAngle, targetAngle) > 160 && controller.IsMovingBackwards ())
-			targetAngle += 180;
-
-		currentAngle = Mathf.SmoothDampAngle(currentAngle, targetAngle, angleVelocity, angularSmoothLag, angularMaxSpeed);
-	}
-
 
 	// When jumping don't move camera upwards but only down!
 	if (controller.IsJumping ())
