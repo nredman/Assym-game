@@ -1,0 +1,29 @@
+Assymetrical rts vs fps game
+
+2 sides
+
+side 1:
+	A single player in an rts mode.
+
+side 2:
+	2-4 players in third person.
+
+
+We have map. Semi uncontrolled Grunt units for Side 1 spawn from predesignated points and got towards some other point. Side 1 gets passive resources to spend on units. As time goes on grunts and resources come faster for side 1. Side 1 also has a supply cap to prevent steamrolling. supply cap can go up over time.
+
+Side 2. Players pick from classes. As people get kills global player level can increase. As players level up they unlock perks and on certain levels new guns. each level will have multiple options for upgrade. Defenses might be part of class abilities. some weapons may have extra utility ex: welding torch.
+
+
+
+
+
+Milestones:
+
+get a map and playable characters
+get the rts character playable
+get networking working
+set up working abilities for playable characters
+set up a map
+get the rts player's resource system working
+
+Set up more milestones
